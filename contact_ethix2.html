@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ETHIX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('back_ethix.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(144, 238, 144, 0.8); /* Light green with transparency */
+            border-radius: 8px;
+        }
+        header {
+            background-color: rgba(50, 205, 50, 0.9); /* Slightly darker green */
+            color: #000;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .contact-info div {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+        .contact-info div h2 {
+            margin-top: 0;
+            color: #006400; /* Dark green color */
+        }
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: #000;
+        }
+        .contact-form h2 {
+            color: #006400; /* Dark green color */
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            color: #000;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #006400; /* Dark green color */
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #004b23; /* Even darker green color */
+        }
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-media h2 {
+            color: #006400; /* Dark green color */
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #006400; /* Dark green color */
+        }
+        .map {
+            margin: 20px 0;
+            height: 400px;
+        }
+        .map h2 {
+            color: #006400; /* Dark green color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us - ETHIX</h1>
+    </header>
+    <div class="container">
+        <div class="contact-info">
+            <div>
+                <h2>Address</h2>
+                <p>33/2, G.T.Road, Salkia, Howrah, 711104</p>
+            </div>
+            <div>
+                <h2>Phone</h2>
+                <p>Main: 1000100001</p>
+                <p>Alternate: 2000020000</p>
+                <p>WhatsApp: 6289151625</p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p>For Job: <a href="mailto:ethixjob04@gmail.com" style="color: #006400;">ethixjob04@gmail.com</a></p>
+                <p>For Help: <a href="mailto:ethixhelp04@gmail.com" style="color: #006400;">ethixhelp04@gmail.com</a></p>
+            </div>
+            <div>
+                <h2>Office Hours</h2>
+                <p>9am to 9pm</p>
+            </div>
+        </div>
+	<br>
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps?q=33/2,+G.T.Road,+Salkia,+Howrah,+711104&output=embed" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+	<br>
+        <div class="social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/EthiX04" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/EthiX04" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
