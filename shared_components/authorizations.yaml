@@ -1,0 +1,111 @@
+---
+- # ====== Authorization: TECHNICIAN_AUTH ======================
+  id: 92979222668324937
+  identification: 
+    name: TECHNICIAN_AUTH
+
+  subscription: 
+    version-number: 15547937563812
+
+  authorization-scheme: 
+    type: PL/SQL Function Returning Boolean
+
+  settings: 
+    pl/sql-function-body: |
+      DECLARE
+      LV_VALID NUMBER;
+      BEGIN
+      SELECT COUNT(*) INTO LV_VALID FROM 
+      ER_USER,ER_ROLE WHERE ER_USER.ROLE_ID=ER_ROLE.ROLE_ID AND USER_ID=:P0_USER_ID AND UPPER(ROLE_NAME)=UPPER('TECHNICIAN');
+      IF LV_VALID >0
+      THEN
+      RETURN TRUE;
+      ELSE
+      RETURN FALSE;
+      END IF;
+      END;
+
+  server-cache: 
+    evaluation-point: Once per Session
+
+  error: 
+    error-message: Sorry. You cannot Access it.
+
+- # ====== Authorization: CUSTOMER_AUTH ========================
+  id: 232833290180297902
+  identification: 
+    name: CUSTOMER_AUTH
+
+  subscription: 
+    version-number: 15547937863690
+
+  authorization-scheme: 
+    type: PL/SQL Function Returning Boolean
+
+  settings: 
+    pl/sql-function-body: |
+      DECLARE
+      LV_VALID NUMBER;
+      BEGIN
+      SELECT COUNT(*) INTO LV_VALID FROM 
+      ER_USER,ER_ROLE WHERE ER_USER.ROLE_ID=ER_ROLE.ROLE_ID AND USER_ID=:P0_USER_ID AND UPPER(ROLE_NAME)=UPPER('CUSTOMER');
+      IF LV_VALID >0
+      THEN
+      RETURN TRUE;
+      ELSE
+      RETURN FALSE;
+      END IF;
+      END;
+
+  server-cache: 
+    evaluation-point: Once per Session
+
+- # ====== Authorization: Administration Rights ================
+  id: 9836728476395038396
+  identification: 
+    name: Administration Rights
+
+  subscription: 
+    version-number: 15542346795197
+
+  authorization-scheme: 
+    type: PL/SQL Function Returning Boolean
+
+  settings: 
+    pl/sql-function-body: return true;
+
+  server-cache: 
+    evaluation-point: Once per Page View
+
+  error: 
+    error-message: Insufficient privileges, user is not an Administrator
+
+- # ====== Authorization: ADMIN_AUTH ===========================
+  id: 17963595051682043572
+  identification: 
+    name: ADMIN_AUTH
+
+  subscription: 
+    version-number: 15547601654164
+
+  authorization-scheme: 
+    type: PL/SQL Function Returning Boolean
+
+  settings: 
+    pl/sql-function-body: |
+      DECLARE
+      LV_VALID NUMBER;
+      BEGIN
+      SELECT COUNT(*) INTO LV_VALID FROM 
+      ER_USER,ER_ROLE WHERE ER_USER.ROLE_ID=ER_ROLE.ROLE_ID AND USER_ID=:P0_USER_ID AND UPPER(ROLE_NAME)=UPPER('ADMIN');
+      IF LV_VALID >0
+      THEN
+      RETURN TRUE;
+      ELSE
+      RETURN FALSE;
+      END IF;
+      END;
+
+  server-cache: 
+    evaluation-point: Once per Session
+

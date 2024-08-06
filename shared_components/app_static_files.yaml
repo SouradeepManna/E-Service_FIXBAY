@@ -1,0 +1,162 @@
+---
+- # ====== Static Application File: app-icon-144-rounded.png ===
+  id: 714055995679482948
+  identification: 
+    file-name: app-icon-144-rounded.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: bird.jpg ===================
+  id: 725405613188202707
+  identification: 
+    file-name: bird.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: bird_1.jpg =================
+  id: 876592813227291106
+  identification: 
+    file-name: bird_1.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: front logo.png =============
+  id: 899426708294881237
+  identification: 
+    file-name: front logo.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: image1.jpg =================
+  id: 903679332621283930
+  identification: 
+    file-name: image1.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: logo1.jpg ==================
+  id: 934603543665991701
+  identification: 
+    file-name: logo1.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: back ground 1.jpg ==========
+  id: 934807069713249952
+  identification: 
+    file-name: back ground 1.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: LOGO_ETHIX.jpg =============
+  id: 993547758241365023
+  identification: 
+    file-name: LOGO_ETHIX.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: download.png ===============
+  id: 3227269632798737264
+  identification: 
+    file-name: download.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: new_logo.jpeg ==============
+  id: 3437841792600946332
+  identification: 
+    file-name: new_logo.jpeg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: new_logo_1.jpg =============
+  id: 3445722377815891285
+  identification: 
+    file-name: new_logo_1.jpg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: app-166551-logo.jpeg =======
+  id: 3448715102727235754
+  identification: 
+    file-name: app-166551-logo.jpeg
+
+  attributes: 
+    mime-type: image/jpeg
+
+- # ====== Static Application File: new_background.jpeg ========
+  id: 3449984248671299353
+  identification: 
+    file-name: new_background.jpeg
+
+  attributes: 
+    mime-type: image/jpeg
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-32.png ======
+  id: 9836725996355038395
+  identification: 
+    file-name: icons/app-icon-32.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-144-rounded.p
+  id: 9836726213529038395
+  identification: 
+    file-name: icons/app-icon-144-rounded.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-192.png =====
+  id: 9836726501165038395
+  identification: 
+    file-name: icons/app-icon-192.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-256-rounded.p
+  id: 9836726898944038396
+  identification: 
+    file-name: icons/app-icon-256-rounded.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+
+- # ====== Static Application File: icons/app-icon-512.png =====
+  id: 9836727173957038396
+  identification: 
+    file-name: icons/app-icon-512.png
+
+  attributes: 
+    mime-type: image/png
+    file-character-set: Unicode UTF-8
+

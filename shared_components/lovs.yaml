@@ -1,0 +1,152 @@
+---
+- # ====== List of Values: PRODUCT =============================
+  id: 2302698821132952170
+  identification: 
+    name: PRODUCT
+
+  subscription: 
+    version-number: 15549860234933
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      select PRODUCT_NAME as D,
+      PRODUCT_ID as R,
+      PRODUCT_BRAND_NAME as L 
+      from ER_PRODUCT_MASTER
+      order by PRODUCT_NAME 
+
+  column-mapping: 
+    return: R
+    display: D
+    default-sort: Use Order By from Query
+
+  columns: 
+  - # ====== Column: R ===========================================
+    id: 2303057416163964323
+    identification: 
+      column-name: R
+      show: false
+
+    layout: 
+      sequence: 10
+
+    source: 
+      data-type: NUMBER
+
+    advanced: 
+      searchable: false
+
+  - # ====== Column: D ===========================================
+    id: 2303057861930964323
+    identification: 
+      column-name: D
+      show: true
+
+    heading: 
+      heading: Product Name
+
+    layout: 
+      sequence: 20
+
+    source: 
+      data-type: VARCHAR2
+
+    advanced: 
+      searchable: true
+
+  - # ====== Column: L ===========================================
+    id: 2303058229915964323
+    identification: 
+      column-name: L
+      show: true
+
+    heading: 
+      heading: Brand Name
+
+    layout: 
+      sequence: 30
+
+    source: 
+      data-type: VARCHAR2
+
+    advanced: 
+      searchable: true
+
+- # ====== List of Values: SERVICE REQUEST =====================
+  id: 2306549939078316497
+  identification: 
+    name: SERVICE REQUEST
+
+  subscription: 
+    version-number: 15549864280243
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      select ER_SERVICE_REQUEST_ISSUE_DESCRIPTION as D,
+      ER_SERVICE_REQUEST_ID as R,
+      USER_NAME
+      from ER_SERVICE_REQUEST A, ER_USER B
+      where A.SERVICE_REQUEST_CUSTOMER_ID = B.USER_ID;
+
+  column-mapping: 
+    return: R
+    display: D
+    default-sort: D
+    sort-direction: Ascending (Nulls Last)
+
+  columns: 
+  - # ====== Column: R ===========================================
+    id: 2306597511112322443
+    identification: 
+      column-name: R
+      show: false
+
+    layout: 
+      sequence: 10
+
+    source: 
+      data-type: NUMBER
+
+    advanced: 
+      searchable: false
+
+  - # ====== Column: D ===========================================
+    id: 2306597972449322443
+    identification: 
+      column-name: D
+      show: true
+
+    heading: 
+      heading: Issue Description
+
+    layout: 
+      sequence: 20
+
+    source: 
+      data-type: VARCHAR2
+
+    advanced: 
+      searchable: true
+
+  - # ====== Column: USER_NAME ===================================
+    id: 2306598349436322443
+    identification: 
+      column-name: USER_NAME
+      show: true
+
+    heading: 
+      heading: User Name
+
+    layout: 
+      sequence: 30
+
+    source: 
+      data-type: VARCHAR2
+
+    advanced: 
+      searchable: true
+

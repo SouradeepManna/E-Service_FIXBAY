@@ -1,0 +1,193 @@
+---
+# ====== Theme: Universal Theme ==============================
+id: 42
+identification: 
+  theme-number: 42
+  name: Universal Theme
+  identifier: UNIVERSAL_THEME
+  version: 24.1
+
+navigation: 
+  type: List
+  navigation-bar-type: List
+
+javascript: 
+  file-urls: 
+  - '#APEX_FILES#libraries/apex/#MIN_DIRECTORY#widget.stickyWidget#MIN#.js?v=#APEX_VERSION#'
+  - '#THEME_FILES#js/theme42#MIN#.js?v=#APEX_VERSION#'
+
+css: 
+  file-urls: 
+  - '#THEME_FILES#css/Core#MIN#.css?v=#APEX_VERSION#'
+
+component-defaults: 
+  page: Standard
+  navigation-bar-list: Navigation Bar
+  navigation-menu-list-position: Side
+  navigation-menu-list-(top): Top Navigation Menu
+  navigation-menu-list-(side): Side Navigation Menu
+  login-page: Login
+  error-page: Login
+  printer-friendly-page: Standard
+  breadcrumb: 9836613555969038273
+  button: Text
+  legacy-calendar: Calendar
+  default-label: Optional - Floating
+  optional-label: Optional - Floating
+  required-label: Required - Floating
+  list: Links List
+  region: Standard
+  classic-report: Standard
+
+region-defaults: 
+  breadcrumbs: Title Bar
+  charts: Standard
+  forms: Standard
+  lists: Standard
+  reports: Standard
+  wizards: Standard
+  interactive-reports: Interactive Report
+
+dialog-defaults: 
+  dialog-content-region: Blank with Attributes
+  dialog-button-region: Buttons Container
+  dialog-page: Modal Dialog
+
+icons: 
+  library: Font APEX
+
+files: 
+  file-prefix: '#APEX_FILES#themes/theme_42/24.1/'
+
+styles: 
+- # ====== Style: Vita (copy_1) ================================
+  id: 1065216695312932255
+  identification: 
+    name: Vita (copy_1)
+
+  settings: 
+    is-current: false
+    is-public: true
+    accessibility-tested: true
+
+  theme-roller-attributes: 
+    read-only: false
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Vita.less'
+    output-css-file-url: '#THEME_DB_FILES#19219827522591770011.css'
+    json-configuration: '{"classes":[],"vars":{"@g_Accent-BG":"#06ac06","@g_Accent-OG":"#bce9f5","@g_Nav-BG":"#0e9825","@g_Nav-FG":"#f1f3f1","@g_Region-Header-BG":"#b3ec8d","@g_Region-Header-FG":"#0a0a0a","@g_Region-BG":"#fce9cf","@g_Region-FG":"#171717"},"customCSS":"","useCustomLess":"N"}'
+
+- # ====== Style: Vita - Dark (Green) ==========================
+  id: 3407979767865945398
+  identification: 
+    name: Vita - Dark (Green)
+
+  settings: 
+    is-current: true
+    is-public: true
+    accessibility-tested: false
+
+  theme-roller-attributes: 
+    read-only: false
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Vita-Dark.less'
+    output-css-file-url: '#THEME_DB_FILES#21562590595144783154.css'
+    json-configuration: '{"classes":[],"vars":{"@g_Accent-BG":"#05c808"},"customCSS":"","useCustomLess":"N"}'
+
+- # ====== Style: Redwood Light ================================
+  id: 9836701016818038379
+  identification: 
+    name: Redwood Light
+
+  settings: 
+    is-current: false
+    is-public: true
+    accessibility-tested: false
+
+  css: 
+    file-urls: 
+    - '#APEX_FILES#libraries/oracle-fonts/oraclesans-apex#MIN#.css?v=#APEX_VERSION#'
+    - '#THEME_FILES#css/Redwood#MIN#.css?v=#APEX_VERSION#'
+
+  theme-roller-attributes: 
+    read-only: true
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Redwood-Theme.less'
+    output-css-file-url: '#THEME_FILES#css/Redwood-Theme#MIN#.css?v=#APEX_VERSION#'
+
+- # ====== Style: Vita =========================================
+  id: 9836701219686038379
+  identification: 
+    name: Vita
+
+  settings: 
+    is-current: false
+    is-public: true
+    accessibility-tested: true
+
+  theme-roller-attributes: 
+    read-only: true
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Vita.less'
+    output-css-file-url: '#THEME_FILES#css/Vita#MIN#.css?v=#APEX_VERSION#'
+
+- # ====== Style: Vita - Dark ==================================
+  id: 9836701492030038379
+  identification: 
+    name: Vita - Dark
+
+  settings: 
+    is-current: false
+    is-public: true
+    accessibility-tested: false
+
+  theme-roller-attributes: 
+    read-only: true
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Vita-Dark.less'
+    output-css-file-url: '#THEME_FILES#css/Vita-Dark#MIN#.css?v=#APEX_VERSION#'
+
+- # ====== Style: Vita - Red ===================================
+  id: 9836701686682038379
+  identification: 
+    name: Vita - Red
+
+  settings: 
+    is-current: false
+    is-public: true
+    accessibility-tested: false
+
+  theme-roller-attributes: 
+    read-only: true
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Vita-Red.less'
+    output-css-file-url: '#THEME_FILES#css/Vita-Red#MIN#.css?v=#APEX_VERSION#'
+
+- # ====== Style: Vita - Slate =================================
+  id: 9836701845300038379
+  identification: 
+    name: Vita - Slate
+
+  settings: 
+    is-current: false
+    is-public: true
+    accessibility-tested: false
+
+  theme-roller-attributes: 
+    read-only: true
+    input-parameter-file-urls: '#THEME_FILES#less/theme/Vita-Slate.less'
+    output-css-file-url: '#THEME_FILES#css/Vita-Slate#MIN#.css?v=#APEX_VERSION#'
+
+files: 
+- # ====== File: 19219827522591770011.css ======================
+  id: 1065217105800932259
+  identification: 
+    file-name: 19219827522591770011.css
+
+  attributes: 
+    mime-type: text/css
+    file-character-set: Unicode UTF-8
+
+- # ====== File: 21562590595144783154.css ======================
+  id: 3407980244951945401
+  identification: 
+    file-name: 21562590595144783154.css
+
+  attributes: 
+    mime-type: text/css
+    file-character-set: Unicode UTF-8
+
